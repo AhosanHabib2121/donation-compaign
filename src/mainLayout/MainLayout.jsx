@@ -3,12 +3,12 @@ import Header from "../components/header/Header";
 
 const MainLayout = () => {
     return (
-        <div>
+        <div >
             {/* header area here */}
             <Header />
             
             {/* Outlet area here */}
-            <div>
+            <div className="mx-24">
                 <Outlet/>
             </div>
         </div>
