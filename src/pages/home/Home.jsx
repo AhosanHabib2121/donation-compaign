@@ -1,4 +1,5 @@
 import Banner from "../../components/banner/Banner";
+import Featured from "../../components/featured/Featured";
 
 const Home = () => {
     return (
@@ -6,6 +7,10 @@ const Home = () => {
             {/* banner area here */}
             <div>
                 <Banner/>
+            </div>
+            {/* featured area here */}
+            <div className="mt-20 mb-24">
+                <Featured/>
             </div>
         </div>
     );

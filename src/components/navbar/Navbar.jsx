@@ -61,7 +61,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div>
-                    <img className="w-3/5" src={logo} alt="logo" />
+                    <img className="w-3/4" src={logo} alt="logo" />
                 </div>
             </div>
             <div className="navbar-end hidden lg:flex">
