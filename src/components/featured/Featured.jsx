@@ -8,8 +8,6 @@ const Featured = () => {
             .then(res => res.json())
             .then(allData => setFeaturedData(allData))  
     }, [])
-    console.log(featuredData)
-
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {

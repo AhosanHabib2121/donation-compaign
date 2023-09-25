@@ -4,27 +4,32 @@ import Home from '../pages/home/Home'
 import Donation from '../pages/donation/Donation'
 import Statistics from '../pages/statistics/Statistics'
 import ErrorMessagePage from '../pages/errorMessagePage/ErrorMessagePage'
+import FeatureDetails from '../components/featureDetails/FeatureDetails'
 
 const myCreateRouter = createBrowserRouter([
   {
     path: '/',
     element: <MainLayout></MainLayout>,
-    errorElement: <ErrorMessagePage/>,
+    errorElement: <ErrorMessagePage />,
     children: [
-        {
-            path: '/',
-            element: <Home></Home>
-        },
-        {
-            path: '/donation',
-            element: <Donation></Donation>
-        },
-        {
-            path: '/statistics',
-            element: <Statistics></Statistics>
-        }
+      {
+        path: '/',
+        element: <Home></Home>,
+      },
+      {
+        path: '/featureDetails/:featureId',
+        loader: () => fetch('/donationData.json/'),
+        element: <FeatureDetails />
+      },
+      {
+        path: '/donation',
+        element: <Donation></Donation>,
+      },
+      {
+        path: '/statistics',
+        element: <Statistics></Statistics>,
+      },
     ],
-    
   },
 ])
 
