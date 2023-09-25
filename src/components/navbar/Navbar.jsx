@@ -31,9 +31,9 @@ const Navbar = () => {
         </>
     )
   return (
-    <div>
-        <div className="navbar lg:px-24 py-6 ">
-            <div className="navbar-start">
+    <div >
+        <div className="lg:navbar px-10 md:px-24 lg:py-6 py-6">
+            <div className="lg:navbar-start flex gap-36 lg:gap-0 items-center justify-between">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
                     <svg
@@ -61,7 +61,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div>
-                    <img className="w-3/4" src={logo} alt="logo" />
+                    <img className="lg:w-3/4" src={logo} alt="logo" />
                 </div>
             </div>
             <div className="navbar-end hidden lg:flex">

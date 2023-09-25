@@ -6,7 +6,7 @@ const Donation = () => {
     const [cardDisplay, setCardDisplay] = useState(4)
 
     return (
-        <div className="mx-24 mt-8 mb-28">
+        <div className="mx-10 md:mx-24 mt-8 mb-28">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                 {
                     getDonateData.slice(0,cardDisplay).map(donateData => <DonationItem key={donateData.id} donateData={donateData} />)

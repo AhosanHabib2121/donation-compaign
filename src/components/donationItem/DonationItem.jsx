@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 const DonationItem = ({ donateData }) => {
     const {picture, title, category, color_category_bg, color_card_bg, text_color,price } = donateData;
     return (
-        <div className="card card-side rounded-lg h-56" style={{background:`${color_card_bg}`}}>
-            <figure><img src={picture} alt="not found" className='w-60 h-56 '/></figure>
+        <div className="card md:card-side rounded-lg md:h-56" style={{background:`${color_card_bg}`}}>
+            <figure><img src={picture} alt="not found" className='w-full md:w-60 md:h-56 '/></figure>
             <div className="card-body pl-4 pr-1">
                 <div>
                     <button className="card-title text-sm font-normal p-2 rounded" style={{color:`${text_color}`,background:`${color_category_bg}`}}>{ category }</button>

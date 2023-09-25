@@ -42,11 +42,12 @@ const FeatureDetails = () => {
     }
 
     return (
-        <div className="card card-compact mt-8 mb-24 mx-24">
-            <figure><img className="w-full mb-12 relative h-[700px]" src={picture} alt="not found" /></figure>
-            <div className="absolute bg-[#0B0B0B80] w-full top-[39%] md:top-[57%] lg:top-[65%] px-6 py-5">
-
-                <button onClick={handleDonate} className="text-white px-5 py-3 text-xl font-semibold rounded" style={{background:`${text_color}`}}>Donate ${ price}</button>
+        <div className="card card-compact mt-8 mb-24 md:mx-24 mx-10">
+            <div className="relative mb-12">
+                <figureure><img className="w-full " src={picture} alt="not found" /></figureure>
+                <div className="absolute bg-[#0B0B0B80] w-full bottom-0 px-6 py-5">
+                    <button onClick={handleDonate} className="text-white px-5 py-3 text-xl font-semibold rounded" style={{background:`${text_color}`}}>Donate ${ price}</button>
+                </div>
             </div>
             <div>
                 <h2 className="card-title pb-4 text-[#0B0B0B] text-4xl font-bold">{title}</h2>

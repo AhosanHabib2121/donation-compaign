@@ -8,7 +8,7 @@ const MainLayout = () => {
             {/* header area here */}
             <Header />
             {/* Outlet area here */}
-            <div className="">
+            <div >
                 <Outlet/>
             </div>
         </div>
