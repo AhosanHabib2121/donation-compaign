@@ -42,7 +42,7 @@ const FeatureDetails = () => {
     }
 
     return (
-        <div className="card card-compact mt-8 mb-24">
+        <div className="card card-compact mt-8 mb-24 mx-24">
             <figure><img className="w-full mb-12 relative h-[700px]" src={picture} alt="not found" /></figure>
             <div className="absolute bg-[#0B0B0B80] w-full top-[39%] md:top-[57%] lg:top-[65%] px-6 py-5">
 

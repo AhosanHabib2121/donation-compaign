@@ -9,7 +9,7 @@ const Home = () => {
                 <Banner/>
             </div>
             {/* featured area here */}
-            <div className="mt-20 mb-24">
+            <div className="mt-20 mb-24 mx-24">
                 <Featured/>
             </div>
         </div>
