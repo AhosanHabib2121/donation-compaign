@@ -12,7 +12,7 @@ const Donation = () => {
                     getDonateData.slice(0,cardDisplay).map(donateData => <DonationItem key={donateData.id} donateData={donateData} />)
                 }
             </div>
-            <div className={`text-center mt-10 ${cardDisplay === getDonateData.length && 'hidden'}`}>
+            <div className={`text-center mt-10 ${cardDisplay === getDonateData.length && 'hidden'} ${cardDisplay > getDonateData.length && 'hidden'}`}>
                 <button onClick={() => setCardDisplay(getDonateData.length)} className="btn px-6 hover:bg-[#08763b] text-white text-base font-semibold  normal-case bg-[#009444]">See all</button>
             </div>
         </div>
